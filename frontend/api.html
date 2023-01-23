@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <title>Doc</title>
+    <script src="skripta.js"></script>
+</head>
+
+
+
+<body onload="podaci()">
+
+    <div class="iconBar">
+        <div class="asd"><a  href="home.html"><i class="fa fa-home aaa"> <span class="hme">Home</span> </i></a></div> 
+        <div class="asd"><a  href="index.html"><i class="fa fa-calculator aaa"> <span class="hme">Calculator</span> </i> </a> </div> 
+        <div class="asd">  <a class="active" href="api.html"><i class="aaa fa fa-mug-hot"> <span class="hme">Diet</span></i></a> </div> 
+          
+        <div class="asd">  <a  href="contactUs.html"><i class="fa fa-envelope aaa"><span class="hme">Contact</span></i></a> </div> 
+          </div>
+
+
+
+    <div id="gornji"><h1 id="naslov" aria-hidden="true"> Food Calculator </h1>
+    
+    <div class="header-images">
+        <img class="slikica" src="https://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/responsive/Mushroom.svg">
+        <img class="slikica" src="https://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/responsive/Orange.svg">
+        <img class="slikica" src="https://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/responsive/Hamburger.svg">
+        <img class="slikica" src="https://img.webmd.com/dtmcms/live//webmd/consumer_assets/site_images/responsive/Cake.svg">
+    </div>
+    </div><hr>
+    <label for="search">Search Food</label><br>
+    <input type="text" name="search" id="searchbar" onkeyup="search_food()">
+    
+
+ <br>
+ <br><br>
+
+
+    <table style=" background-color: lightblue;" id="podaciTabela" >
+        <tr>
+            <th>Name</th>
+            <th>Calories</th>
+            <th>Fats</th>
+            <th>Carbs</th>
+            <th>Protein</th>
+        </tr>
+    </table>
+
+
+</body>
+</html>

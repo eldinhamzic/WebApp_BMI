@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleContactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="iconBar">
+        <div class="asd"><a  href="home.html"><i class="fa fa-home aaa"> <span class="hme">Home</span> </i></a></div> 
+        <div class="asd"><a  href="index.html"><i class="fa fa-calculator aaa"> <span class="hme">Calculator</span> </i> </a> </div> 
+        <div class="asd">  <a href="api.html"><i class="aaa fa fa-mug-hot"> <span class="hme">Diet</span></i></a> </div> 
+          
+        <div class="asd">  <a class="active" href="contactUs.html"><i class="fa fa-envelope aaa"><span class="hme">Contact</span></i></a> </div> 
+          </div>
+    
+      <div class="fcf-body">
+
+        <div id="fcf-form">
+        <h3 class="fcf-h3">Contact us</h3>
+    
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Your email address</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Your message</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+            </div>
+    
+            
+    
+        </form>
+        </div>
+    
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

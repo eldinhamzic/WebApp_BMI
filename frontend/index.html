@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <title>BMI-calc</title>
+</head>
+
+<body>
+    
+      <div class="iconBar">
+  <div class="asd"><a  href="home.html"><i class="fa fa-home aaa"> <span class="hme">Home</span> </i></a></div> 
+  <div class="asd"><a class="active" href="index.html"><i class="fa fa-calculator aaa"> <span class="hme">Calculator</span> </i> </a> </div> 
+  <div class="asd">  <a href="api.html"><i class="aaa fa fa-mug-hot"> <span class="hme">Diet</span></i></a> </div> 
+    
+  <div class="asd">  <a href="contactUs.html"><i class="fa fa-envelope aaa"><span class="hme">Contact</span></i></a> </div> 
+    </div>
+  
+  
+    <section class="section1">
+
+
+        <div class="tabs">
+            <div class="tabs_head">
+                <span class="tabs_toggle is-active tab-naziv">Metric Units</span>
+                <span class="tabs_toggle">US Units</span>
+                
+            </div>
+            <div class="tabs_body">
+                <div class="tabs_content is-active glavni-tab">
+                    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+                    <form class="form" id="form" >
+                        <div class="row-one">
+                            <input type="text" class="text-input" id="age" autocomplete="off" required>
+                            <p class="text">Age</p>
+
+                            <label class="container">
+                                <input type="radio" name="radio" id="m" checked>
+                                <p class="text">Male</p>
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <label class="container">
+                                <input type="radio" name="radio" id="f">
+                                <p class="text">Female</p>
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+
+                        <div class="row-two">
+                            <input type="text" class="text-input" id="height" autocomplete="off" required>
+                            <p class="text">Height (cm)</p>
+                            <input type="text" class="text-input" id="weight" autocomplete="off" required>
+                            <p class="text">Weight (kg)</p>
+                        </div>
+                        <button type="button" id="submit" onclick="racunMetric()">Submit</button>
+                        <p  class="rez">Your BMI is: </p>
+                        <p id ="rez"  class="rez2"></p>
+                    </form>
+                    </div>
+                   
+                    <div class="tabs_content">
+                        <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator - US Units</h3>
+                        <form class="form" id="form">
+                            <div class="row-one">
+                                <input type="text" class="text-input" id="age1" autocomplete="off" required />
+                                <p class="text">Age</p>
+
+                                <label class="container">
+                                    <input type="radio" name="radio" id="m1" checked>
+                                    <p class="text">Male</p>
+                                    <span class="checkmark"></span>
+                                </label>
+
+
+                                <label class="container">
+                                    <input type="radio" name="radio" id="f1">
+                                    <p class="text">Female</p>
+                                    <span class="checkmark"></span>
+                                </label>
+                               
+                            </div>
+    
+                            <div class="row-two">
+                                <input type="text" class="text-input" id="height1" autocomplete="off" required>
+                                <p class="text">Height (Inches)</p>
+                                <input type="text" class="text-input" id="weight1" autocomplete="off" required>
+                                <p class="text">Weight (Pounds)</p>
+                            </div>
+                            <button type="button" id="submit" onclick="racunUS()">Submit</button>
+                            <p  class="rez">Your BMI is: </p>
+                            <p id ="rez1" class="rez2"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <form  id="bmi" class="bmit">
+                <table>
+                  <tr>
+                    <th >Category</th>
+                    <th >BMI - range</th>
+                  </tr>
+                  <tr id="severe" class="svr">
+                    <td ><p >Severe Thinness</p></td>
+                    <td>
+                      <p> < 16 </p>
+                    </td>
+                  </tr >
+                  <tr id="severe1" class="svr">
+                    <td><p >Moderate Thinness</p></td>
+                    <td><p> 16 - 17</p></td>
+                  </tr>
+                  <tr id="severe2" class="svr">
+                    <td><p>Mild Thinness</p></td>
+                    <td><p>17 - 18.5</p></td>
+                  </tr>
+                  <tr id="severe3" class="svr">
+                    <td><p>Normal</p></td>
+                    <td><p>18.5 - 25</p></td>
+                  </tr>
+                  <tr id="severe4" value="svr">
+                    <td><p>Overweight</p></td>
+                    <td><p>25 - 30</p></td>
+                  </tr>
+                  <tr id="severe5" class="svr">
+                    <td><p>Obese Class I</p></td>
+                    <td><p>30 - 35</p></td>
+                  </tr>
+                  <tr id="severe6" class="svr">
+                    <td><p>Obese Class II</p></td>
+                    <td><p>35 - 40</p></td>
+                  </tr>
+                  <tr id="severe7" class="svr">
+                    <td><p>Obese Class III</p></td>
+                    <td><p> > 40</p></td>
+                  </tr>
+
+                
+                  
+                </table>
+              </form>
+    </section>
+   
+
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
